@@ -58,3 +58,8 @@ smpic_view(p, sm = "twitter_in-stream_photo", text_factor = .8)
 ```
 
 ![](README-unnamed-chunk-6-1.png)
+
+``` r
+smpic_save(p, filename = "my_new_social_media_plot.png",
+           sm = "facebook_shared_images", text_factor = 2.2)
+```

@@ -15,16 +15,16 @@ p <- ggplot(iris) +
        caption = "Source: iris") +
   theme_minimal()
 
-## ------------------------------------------------------------------------
+## ---- fig_height=5, fig_width=7------------------------------------------
 p
 
-## ------------------------------------------------------------------------
+## ---- fig_height=5, fig_width=7------------------------------------------
 smpic_view(p, sm = "facebook_shared_images", text_factor = 2.2)
 
-## ------------------------------------------------------------------------
-smpic_view(p, sm = "facebook_shared_images", text_factor = 2.2)
+## ---- fig_height=5, fig_width=7------------------------------------------
+smpic_view(p, sm = "twitter_in-stream_photo", text_factor = .8)
 
-## ------------------------------------------------------------------------
-smpic_save(p, filename = "my_new_social_media_plot.png",
-           sm = "facebook_shared_images", text_factor = 2.2)
+## ---- eval=FALSE---------------------------------------------------------
+#  smpic_save(p, filename = "my_new_social_media_plot.png",
+#             sm = "facebook_shared_images", text_factor = 2.2)
 

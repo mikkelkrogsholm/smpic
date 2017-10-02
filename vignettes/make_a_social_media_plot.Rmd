@@ -54,7 +54,7 @@ smpic_view(p, sm = "twitter_in-stream_photo", text_factor = .8)
 ```
 
 
-```{r, eval=FALSE, include=FALSE}
+```{r, eval=FALSE}
 smpic_save(p, filename = "my_new_social_media_plot.png",
            sm = "facebook_shared_images", text_factor = 2.2)
 ```
