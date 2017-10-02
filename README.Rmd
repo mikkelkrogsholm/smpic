@@ -14,8 +14,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-# smpic
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/smpic)](http://cran.r-project.org/package=smpic)
 
+# smpic
 
 When you have created an awesome plot you want to share it with the world. But you want it to look just as awesome when you do as it looked in Rstudio on your local machine.
 
