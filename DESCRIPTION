@@ -17,7 +17,6 @@ Depends:
 Imports:
     imager,
     ggplot2,
-    dplyr,
     stringr,
     graphics
 URL: https://github.com/mikkelkrogsholm/smpic, 
@@ -26,5 +25,6 @@ BugReports: https://github.com/mikkelkrogsholm/smpic/issues
 RoxygenNote: 6.0.1
 Suggests: knitr,
     rmarkdown,
-    testthat
+    testthat,
+    dplyr
 VignetteBuilder: knitr

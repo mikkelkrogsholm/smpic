@@ -56,7 +56,7 @@ smpic_save <- function(p, filename = NULL,
 
   # Set dimensions to fit with social media
   sm <- sm[1]
-  my_dims <- dplyr::filter(smpic::smpic_dim, id == sm)
+  my_dims <- smpic::smpic_dim[smpic::smpic_dim$id == sm, ]
 
   # Make height and width calculations
   dpi <- text_factor * 100
@@ -120,9 +120,11 @@ smpic_view <- function(p,
                               "ello_banner_image", "ello_profile_image"),
                        text_factor = 1) {
 
+  # if(getRversion() >= "2.15.1")  utils::globalVariables(c("id"))
+
   # Set dimensions to fit with social media
   sm <- sm[1]
-  my_dims <- dplyr::filter(smpic::smpic_dim, id == sm)
+  my_dims <- smpic::smpic_dim[smpic::smpic_dim$id == sm, ]
 
   # Set temp filename
   filename <- paste0(tempfile(), ".png")
